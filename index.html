@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>VoteCheck</title>
+</head>
+<body>
+    
+    <section class="check-box">
+
+        <div class="box">
+
+            <h1>Voting <span class="ele">Eligibility</span> Checker</h1>
+
+            <p>A web-based application that allows users to determine their eligibility to vote. By inputting their age, the application quickly assesses whether they are old enough to participate in elections.</p>
+
+            <div class="enter-box">
+
+                <label for="age" class="ent-blab">Enter your age and click the button</label><br>
+                <input type="number" id="age" placeholder="Enter your age"><br>
+                <button onclick="ageFunction()" class="btn">Check Now</button>
+                
+            </div>
+
+            <p id="display"></p>
+
+        </div>
+
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

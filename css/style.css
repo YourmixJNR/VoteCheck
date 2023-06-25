@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+:root {
+  --primary-color: #edf2f8;
+  --secondary-color: #313bac;
+}
+
+/* BASE STYLES */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: 'DM Sans', 'Mulish', sans-serif;
+  background: var(--primary-color);
+  color: #111;
+}
+
+/* Section */
+
+.check-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.check-box .box {
+    display: block;
+    text-align: center;
+}
+
+.check-box .box h1 {
+    font-size: 36px;
+    margin-bottom: 1rem;
+}
+
+.check-box .box h1 .ele {
+    color: var(--secondary-color);
+}
+
+.check-box .box p {
+    font-size: 20px;
+    color: #46364a;
+    margin-bottom: 1rem;
+}
+
+.enter-box {
+    margin-top: 1.5rem;
+}
+
+.enter-box .ent-blab {
+    font-size: 18px;
+    color: #46364a;
+}
+
+input[type=number] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    background: #daecfb;;
+    border: none;
+    border-radius: 4px;
+}
+
+.enter-box .btn {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    color: #fff;
+    background: var(--secondary-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#display {
+    margin-top: 1rem;
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--secondary-color);
+}
+
+@media (max-width:991px){
+
+    .check-box .box h1 {
+        font-size: 30px;
+    }
+
+    .check-box .box p, .enter-box .ent-blab {
+        font-size: 17px;
+    }
+    
+    .check-box {
+        max-width: 90%;
+    }
+}
+
+@media(max-width:400px){
+
+    input[type=number] {
+        width: 100%;
+    }
+}
